@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Even or Odd Numberchecker</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <center>
+      <div class="head">
+        <h2>ODD OR EVEN NUMBER CHECKER</h2>
+        <h1>TYPE YOUR NUMBER</h1>
+        <input type="number" placeholder="Enter number" id="checknumber">
+        <button onclick="numberType()">Check</button>
+        <div id="display"></div>
+      </div>
+    </center>
+    <script>
+      function numberType(){
+        var number = checknumber.value;
+       var displayEl = document.getElementById("display");
+        if ( number % 2 == 0) {
+          console.log("even number")
+          displayEl.innerHTML = "even number"
+        } else if ( number % 2 == 1) {
+          console.log("odd number")
+          displayEl.innerHTML = "odd number"
+        }  
+      }
+    </script>
+  </body>
+</html>
